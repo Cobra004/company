@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Knowmore from './pages/Knowmore';
 import Nothing from './pages/Onumilla';
 import Contact from './pages/Contact';
-
+import ProductPage from './pages/ProductPage';
 export default function App() {
   return (
     <BrowserRouter>
@@ -13,6 +13,7 @@ export default function App() {
       <Route path='/Know-more' element={<Knowmore/>}></Route>
       <Route path='/Nothing' element={<Nothing/>}></Route>
       <Route path='/contact' element={<Contact/>}></Route>
+      <Route path='/Products' element={<ProductPage/>}></Route>
     </Routes>
     </BrowserRouter>
   )

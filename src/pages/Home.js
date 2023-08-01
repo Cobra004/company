@@ -12,9 +12,10 @@ const logo = require('./assets/logo.png');
 // Add this above the Navbar component
 const navItems = [
   { id: 1, title: "Home", link: "/"},
-  { id: 2, title: "Features", link: "/benefits" },
+  { id: 2, title: "Products", link: "/Products" },
   { id: 3, title: "About Us", link: "/classes" },
   { id: 4, title: "Contact Us", link: "/contact" },
+  { id: 5, title: "Know more", link: "/know-more" },
 ];
 
 export default function Home(){
@@ -125,8 +126,8 @@ function Navbar() {
           </div>
         </div>
         <div className="m-2 p-3 w-auto text-center hidden lg:block">
-          <p className="m-1 text-sm">Unveil the limitless potential of AI. Embrace the future at <span>Erexa</span></p>
-          <Link target="_blanck" to='/Know-more'><button class="px-3 py-2 m-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 bg-opacity-90 backdrop-filter backdrop-blur-md shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all">Know more</button></Link>
+          <p className="m-1 text-sm">Unveil the limitless potential of AI. Embrace the future at <span title="For the future">Erexa</span></p>
+          <Link target="_blanck" to='/Know-more'><button class="px-3 py-2 m-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 bg-opacity-90 backdrop-filter backdrop-blur-md shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all">View more</button></Link>
           
         </div>
       </header>
