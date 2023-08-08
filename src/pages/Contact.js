@@ -1,4 +1,6 @@
 import React from "react";
+import './style.css';
+import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 export default function Contact(){
     return(
@@ -8,61 +10,42 @@ export default function Contact(){
 
 function Form(){
     return(
-        <section id='Contact' className=" font-Poppins bg-gradient-to-r from-blue-100  to-purple-100  py-10">
-  <div className="container mx-auto rounded-md px-4">
-    <h2 className="text-3xl font-bold drop-shadow-md text-gray-800 mb-6">Contact Us</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* Contact Information */}
-      <div className="bg-transparent bg-opacity-90 backdrop-filter backdrop-blur-md p-6 rounded-md shadow-lg">
-        <h3 className="text-xl font-bold text-gray-800 mb-4">Get in Touch</h3>
-        <p className="text-gray-800 mb-2">
-          Address: 123 AI Street, City, Country
-        </p>
-        <p className="text-gray-800 mb-2">
-          Email: info@yourcompany.com
-        </p>
-        <p className="text-gray-800">
-          Phone: +1 (555) 123-4567
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2407.8117690572926!2d78.77762072338534!3d10.994568443609428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baafa4d711a4f27%3A0xd98b2745d789433c!2sM.A.M.%20College%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sin!4v1690637393705!5m2!1sen!2sin" className='w-auto h-auto my-3 rounded-md shadow-md'></iframe>
-      </div>
-
-      {/* Contact Form */}
-      <div className="bg-transparent bg-opacity-90 backdrop-filter backdrop-blur-md p-6 rounded-md shadow-lg">
-        <h3 className="text-xl font-bold mb-4">Send us a Message</h3>
-        <form>
-          <div className="mb-4">
-            <input
-              type="text"
-              className="w-full p-3 border shadow outline-none rounded-md bg-transparent"
-              placeholder="Your Name"
-            />
+      <div className="min-h-screen font-Poppins flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 bg-opacity-50 backdrop-filter backdrop-blur-md">
+      <div className="glassmorphism-container">
+        <h2 className="text-4xl font-bold text-white mb-8">Contact Us</h2>
+        <div className="glassmorphism-form">
+          <input
+            type="text"
+            placeholder="Name"
+            className="input"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="input"
+          />
+          <textarea
+            placeholder="Message"
+            rows="4"
+            className="input"
+          ></textarea>
+          <button className="px-6 py-3 m-2 rounded-full text-white bg-gradient-to-r from-blue-500 to-purple-500 bg-opacity-90 backdrop-filter backdrop-blur-md shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all">Send</button>
+        </div>
+        <div className="glassmorphism-social mt-8">
+          <div className="flex flex-row justify-center space-x-4 m-3   ">
+            <a href="/Nothing" className="social-link">
+            <FaTwitter />
+            </a>
+            <a href="/Nothing" className="social-link">
+            <FaFacebook />
+            </a>
+            <a href="/Nothing" className="social-link">
+            <FaInstagram />
+            </a>
           </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              className="w-full p-3 border shadow rounded-md outline-none bg-transparent"
-              placeholder="Your Email"
-            />
-          </div>
-          <div className="mb-4">
-            <textarea
-              className="w-full p-3 border shadow rounded-md outline-none resize-none bg-transparent"
-              rows="4"
-              placeholder="Your Message"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="px-3 py-3 m-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 bg-opacity-90 backdrop-filter backdrop-blur-md shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-al"
-          >
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
     )
 }

@@ -13,7 +13,7 @@ const logo = require('./assets/logo.png');
 const navItems = [
   { id: 1, title: "Home", link: "/"},
   { id: 2, title: "Products", link: "/Products" },
-  { id: 3, title: "About Us", link: "/classes" },
+  { id: 3, title: "About Us", link: "/About-Us" },
   { id: 4, title: "Contact Us", link: "/contact" },
   { id: 5, title: "Know more", link: "/know-more" },
 ];

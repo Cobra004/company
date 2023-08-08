@@ -15,3 +15,52 @@
     background-attachment: fixed;
     
 }
+
+
+/* src/ContactPage.css */
+.glassmorphism-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.glassmorphism-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.glassmorphism-form .input {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: white;
+  outline: none;
+}
+
+.glassmorphism-form .input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.glassmorphism-social {
+  margin-top: 2rem;
+}
+
+.glassmorphism-social .social-link {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+}
+
+.glassmorphism-social .social-link:hover {
+  color: white;
+}

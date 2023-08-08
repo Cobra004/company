@@ -1,6 +1,6 @@
-import react from 'react';
 
-const noth = require('./assets/onnum_illa.jpg')
+
+const noth = require('./assets/nothing.jpeg')
 
 
 export default function Nothing(){
