@@ -109,7 +109,7 @@ function Navbar() {
           <h4 className="text-center text-gray-800 font-bold text-1xl lg:text-2xl "> – the next Era awaits!</h4>
         </div>
         <div className="m-3 p-5 w-auto ">
-          <p className="  text-center text-gray-800 text-xs font-thin lg:text-sm text-light">"Unleashing the Power of <span title="Artificial Inteligence">AI</span>  for a Limitless Future</p>
+          <p className="  text-center text-gray-800 text-xs font-thin lg:text-sm text-light">"Unleashing the Power of <span title="Artificial Inteligence">AI</span>  for a Limitless Future"</p>
         </div>
         <div className="grid m-3 gap-1 sm:grid-cols-1  lg:grid-cols-3">
           <div className=" bg-opacity-90 backdrop-filter backdrop-blur-md p-5 rounded-xl shadow-sm hover:bg-gradient-to-r from-blue-200 to-purple-200">
